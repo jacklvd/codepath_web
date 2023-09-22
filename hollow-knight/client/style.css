@@ -1,0 +1,237 @@
+/* Root Styles CSS */
+:root {
+  background-color: white;
+  font-family: Avenir, Helvetica, sans-serif;
+  color: black;
+  box-sizing: border-box;
+}
+
+/* Header CSS */
+.header-container {
+  overflow: hidden;
+  padding: 20px 10px;
+  padding-bottom: 60px;
+  margin-bottom: 2rem;
+  background-image: url("https://images.squarespace-cdn.com/content/v1/58b3cae5d1758e0132a008c6/1534835247311-CM5YER1961LOAYOBTUFR/HollowKnightSkyboundThumb.png?format=2500w");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+}
+
+.header-semi-box {
+  background-color: #000;
+  color: #fff;
+  opacity: .5;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+  right: 0;
+  width: 50%; /* Adjust the width as needed */
+  box-sizing: border-box; /* Adjust box-sizing */
+  position: absolute;
+  margin-bottom: 1rem;
+}
+
+.header-semi-box h1 {
+  font-size: 4.2rem;
+}
+
+.header-semi-box p {
+  font-size: 1.5rem;
+}
+
+.header-semi-box button {
+  margin-top: 20px; /* Adjust the margin as needed */
+  background-color: white;
+  border: solid;
+  border-width: 3px;
+  border-color: rgb(3, 7, 89);
+  border-radius: 0.1rem;
+  border-radius: 16px;
+  box-sizing: border-box;
+  color: rgb(3, 7, 89);
+  cursor: pointer;
+  padding: 15px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  width: 220px;
+  font-size: medium;
+}
+
+/* Home page CSS */
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  background: transparent;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(3, 7, 89);
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+}
+
+.card img {
+  height: 100%;
+}
+
+.top-container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 250px;
+}
+
+.bottom-container {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.bottom-container h3 {
+  margin-top: 10px;
+  margin-bottom: 6px;
+}
+
+.bottom-container p {
+  margin: 2px;
+}
+
+.bottom-container a {
+  color: rgb(228, 16, 133);
+  text-decoration: none;
+}
+
+.message {
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* 404 Page CSS */
+
+.fof-container {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: black;
+}
+
+.fof {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fof h1 {
+  color: rgb(26, 25, 25);
+  font-size: 50px;
+  display: inline-block;
+  padding-right: 12px;
+  animation: type 0.6s alternate infinite;
+}
+
+@keyframes type {
+  from {
+    box-shadow: inset -3px 0px 0px #888;
+  }
+  to {
+    box-shadow: inset -3px 0px 0px transparent;
+  }
+}
+
+/* Detail Page CSS*/
+
+.container {
+  max-width: 1098px;
+  display: gird;
+  /* justify-content: center; */
+  margin: 2rem auto;
+  background-color: grey;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.057);
+}
+
+.image-container {
+  grid-template-columns: repeat(2, 2fr);
+  width: 40vw;
+  margin-right: 2rem;
+  display: flex;
+}
+
+.image-container img {
+  width: 100%;
+  padding: 1rem;
+}
+
+.knight-details {
+  width: 45vw;
+  color: blanchedalmond;
+  margin-left: 2rem;
+}
+
+.knight-name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Media Screen Break Point */
+@media screen and (max-width: 798px) {
+  .header-semi-box h1 {
+    font-size: 3.2rem;
+  }
+  
+  .header-semi-box p {
+    font-size: 1.3rem;
+  }
+  
+  .header-semi-box button {
+    margin-top: 20px; /* Adjust the margin as needed */
+    width: 180px;
+    font-size: small;
+  }
+
+  .image-container {
+    width: 80%; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Center the container */
+    margin-bottom: 1rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .knight-details {
+    width: 80%; /* Adjust width for responsiveness */
+    margin: 0 auto; /* Center the container */
+  }
+
+}
+
+
+@media screen and (max-width: 498px) {
+  .header-semi-box h1 {
+    font-size: 2.2rem;
+  }
+  
+  .header-semi-box p {
+    font-size: 1rem;
+  }
+  
+  .header-semi-box button {
+    margin-top: 20px; /* Adjust the margin as needed */
+    width: 150px;
+    font-size: smaller;
+  }
+}
